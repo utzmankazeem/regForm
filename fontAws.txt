@@ -1,0 +1,8 @@
+install fontawesome
+https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
+GetStarted - copy 3 npm command 
+npm i the 3 command
+
+npm i axios
+chrome ext for reader - chromevox
+
