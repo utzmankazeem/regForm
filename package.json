@@ -1,7 +1,7 @@
 {
   "name": "formValidate",
   "version": "0.1.0",
-  "homepage": "https://github.com/utzmankazeem/react_regForm",
+  "homepage": "https://github.com/utzmankazeem/regForm",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
