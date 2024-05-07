@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/utzmankazeem/regForm/static/css/main.9771d806.css",
-    "main.js": "/utzmankazeem/regForm/static/js/main.7a0378b2.js",
-    "index.html": "/utzmankazeem/regForm/index.html",
-    "main.9771d806.css.map": "/utzmankazeem/regForm/static/css/main.9771d806.css.map",
-    "main.7a0378b2.js.map": "/utzmankazeem/regForm/static/js/main.7a0378b2.js.map"
+    "main.css": "/regForm/static/css/main.9771d806.css",
+    "main.js": "/regForm/static/js/main.7a0378b2.js",
+    "index.html": "/regForm/index.html",
+    "main.9771d806.css.map": "/regForm/static/css/main.9771d806.css.map",
+    "main.7a0378b2.js.map": "/regForm/static/js/main.7a0378b2.js.map"
   },
   "entrypoints": [
     "static/css/main.9771d806.css",
