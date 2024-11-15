@@ -1,40 +1,40 @@
-# Registration App
+# Movies Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+this is a react aunthentiation platform, such that users verify before using our appliccation.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn see usage, check out the [React documentation] (https://utzmankazeem.github.io/regform).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+the application allows users to aunthentiate their credentials on the platform
+there are character identification, and usage suggenstion.
+as users punches a key the auto sugest button pops to clearify what is needed and suggest what could be wrong
+there are symbols of logic in place for easy usage
 
-### Analyzing the Bundle Size
+### npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+run npm install to install all dependencies
 
-### Making a Progressive Web App
+```ts
+    code to use : ES7 react snippet
+    change functions to : async/await
+    proper usage of: try/catch in functions
+    using version : REACT 18.2.0
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### npm start
 
-### Tech Start
+npm start to run app
 
-#REACT
-#JS
+#React js 
+#React Form 
+#Es7 React Snippet 
+#MaterialUi
+#Async/Await 
 #CSS3
-#HTML
+#SPA-App
+#FrontendDev

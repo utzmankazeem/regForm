@@ -97,7 +97,7 @@ const Form = () => {
       ) : (
         <div className='Form' >
           <p ref={errRef} className={errMsg ? "errmsg" :
-            "offscreen"} aria-live="assertive">{errMsg}</p>
+            "offscreen"} aria-live="assertive"> {errMsg} </p>
           <h1>Reg Form</h1>
           <form  onSubmit={handleSubmit}>
             <label htmlFor='username'>
@@ -123,14 +123,14 @@ const Form = () => {
               onBlur={() => setUserFocus(false)}
             />
             <p id='uidnote' className={userFocus && user &&
-              !validName ? "intructions" : "offscreen"}>
+              !validName ? "instructions" : "offscreen"}>
               <FontAwesomeIcon icon={faInfoCircle} />
               4 - 24 chars <br />
               Must start with Letter <br />
               a, 1, _ '' allowed.
             </p>
 
-
+            {/* Password */}
             <label htmlFor="password">
               Password
               <span className={validPwd ? "valid" : "hide"}>
@@ -151,18 +151,19 @@ const Form = () => {
               onFocus={() => setPwdFocus(true)}
               onBlur={() => setPwdFocus(false)}
             />
-            <p id='pwdnote' className={pwdFocus && !validPwd ? "intructions" : "offscreen"}>
+            <p id='pwdnote' className={pwdFocus && pwd && !validPwd ? "instructions" : "offscreen"}>
               <FontAwesomeIcon icon={faInfoCircle} />
               8 - 24 chars <br />
-              Must include Uper&Lower leters, num & spec chars<br />
+              Must include Uper&Lower <br /> 
+              leters, num & spec chars<br />
               Allowed special chars: <span aria-label='exclamation mark'>!</span>
               <span aria-label='at symbol'>@</span> <span aria-label='at hashtag'>#</span>
               <span aria-label='dollar sign'>$</span><span aria-label='percent'>%</span>
             </p>
 
-            <br />
+              {/* Confirm Pass */}
             <label htmlFor='confirmPwd'>
-              Confirm Password
+              Confirm
               <span className={validMatch && matchPwd ? "valid" : "hide"}>
                 <FontAwesomeIcon icon={faCheck}/>
               </span>
@@ -176,25 +177,28 @@ const Form = () => {
               id='confirmPwd'
               onChange={(e) => setMatchPwd(e.target.value)}
               required
-              aria-invalid={validPwd ? "false" : "true"}
+              aria-invalid={validMatch ? "false" : "true"}
               aria-describedby='confirmnote'
               onFocus={() => setPwdFocus(true)}
               onBlur={() => setPwdFocus(false)}
             />
-            <p id='confirmnote' className={matchFocus && !validMatch ? "intructions" : "offscreen"}>
+            <p id='confirmnote' className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
               <FontAwesomeIcon icon={faInfoCircle} />
-             Must match the password above.
+              Must match the password above.
             </p>
-            <br />
-            <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+            
+            <button className='' disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
           </form>
-          <p>
+
+          <small>
             Already registered<br />
             <span className='line'>
               {/* router link */}
-              <a href="#">Sign In</a>
+              <button className='btn'>
+              <a className='btn' href="#">Sign In</a>
+              </button> 
             </span>
-          </p>
+          </small>
         </div>
       )}
     </>
