@@ -28,12 +28,13 @@ code {
   font-size: calc(10px + 2vmin);
   height: calc(100vh - 2px);
   color: white;
- width: 70vw;;
+  width: 100vw;;
 }
 
 Form {
   background-color: grey;
-  width: 40vw;
+  border-radius: 5px;
+  width: 30vw;
   height: 50vh;
   display: flex;
   margin: auto;
@@ -49,8 +50,11 @@ Form {
       height: 30px;
       border: none; 
       border-radius: 5px;
-      margin-bottom: 5px;
+      margin: 5px;
     }
+    #confirmPwd{
+      margin-bottom: 20px
+    };
 
     button {
       text-decoration: none; 
@@ -59,6 +63,7 @@ Form {
       border: none;
       align-self: center;  
       border-radius: 5px;
+      cursor: pointer;
     
     }
 }
